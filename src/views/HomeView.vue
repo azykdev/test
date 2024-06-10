@@ -1,9 +1,13 @@
+<template>
+  <div>
+    <TheHeader />
+  </div>
+</template>
+
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import TheHeader from '@/components/TheHeader.vue'
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style lang="scss" scoped>
+
+</style>
