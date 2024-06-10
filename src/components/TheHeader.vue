@@ -1,8 +1,8 @@
 <template>
   <header>
-    <div class="md:w-10 lg:w-8 mx-auto">
+    <div class="md:w-10 lg:w-8 mx-auto p-3">
       <div class="grid ">
-        <div class="md:col-6">
+        <div class="lg:col-6">
           <h1 style="font-size: 41px;">Проверьте штрафы и зарегестрируйтесь в 1 клик</h1>
 
           <form class="mt-5" @submit.prevent>
@@ -10,29 +10,29 @@
               <div class="md:col-7 col-12">
                 <div class="flex flex-column gap-2">
                   <label for="car_number">Номер автомобиля</label>
-                  <InputText id="car_number" placeholder="АА 123 АА" class="" />
+                  <InputText id="car_number" placeholder="АА 123 АА" required />
                 </div>
               </div>
               <div class="md:col-5 col-12">
                 <div class="flex flex-column gap-2">
                   <label for="region">Регион</label>
-                  <InputText id="region" placeholder="Регион" class="" />
+                  <InputText id="region" placeholder="Регион" required />
                 </div>
               </div>
               <div class="col-12">
                 <div class="flex flex-column gap-2">
                   <label for="region">Свидетельство о регистрации ТС</label>
-                  <InputText id="region" placeholder="Свидетельство" class="" />
+                  <InputText id="region" placeholder="Свидетельство" required />
                 </div>
               </div>
             </div>
 
-            <div class="mt-3 flex gap-2">
-              <Button type="submit" class=" border-round-lg">
+            <div class="mt-3 sm:flex lg:block gap-2">
+              <Button type="submit" class=" border-round-lg mb-2 mr-2 ">
                 <span class="mb-1">Проверить штрафы</span>
                 <i class="pi pi-arrow-right ml-2 "></i>
               </Button>
-              <Button type="submit" class=" border-round-lg" outlined @click="visible = true">
+              <Button type="button" class=" border-round-lg mb-2" outlined @click="visible = true">
                 <i class="pi pi-youtube mr-2 text-2xl"></i>
                 <span class="text-900 mr-1 mb-1">О сервисе </span>
                 <span class="mb-1"> (1 мин. 20 сек)</span>
@@ -44,8 +44,8 @@
 
           </form>
         </div>
-        <div class="md:col-6">
-          <img src="@/assets/img/header-img.png" alt="">
+        <div class="lg:col-6">
+          <img src="@/assets/img/header-img.png" alt="" class="w-full mt-5 lg:mt-0">
         </div>
       </div>
 

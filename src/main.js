@@ -12,6 +12,8 @@ import 'primeflex/primeflex.css'; // Flexbox utility
 import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
 import Dialog from 'primevue/dialog';
+import Carousel from 'primevue/carousel';
+import Breadcrumb from 'primevue/breadcrumb';
 
 const app = createApp(App)
 
@@ -21,5 +23,7 @@ app.use(PrimeVue);
 app.component('Button', Button);
 app.component('InputText', InputText);
 app.component('Dialog', Dialog);
+app.component('Carousel', Carousel);
+app.component('Breadcrumb', Breadcrumb);
 
 app.mount('#app')

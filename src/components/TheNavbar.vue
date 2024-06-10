@@ -5,12 +5,12 @@
         <RouterLink to="/">
           <img src="@/assets/img/logo.png" alt="logo" class="nav-logo">
         </RouterLink>
-        <RouterLink to="/">Тарифы</RouterLink>
-        <RouterLink to="/">Контакты</RouterLink>
+        <RouterLink to="/" class="hidden md:block">Тарифы</RouterLink>
+        <RouterLink to="/" class="hidden md:block">Контакты</RouterLink>
       </div>
 
       <div class="flex align-items-center gap-4">
-        <a href="tel:+74951184422" class="text-white"> +7 495 118-44-22</a>
+        <a href="tel:+74951184422" class="text-white hidden md:block"> +7 495 118-44-22</a>
         <RouterLink to="/">Вход</RouterLink>
         <RouterLink to="/" class="bg-primary p-2 border-round-md">Регистрация</RouterLink>
       </div>
