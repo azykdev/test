@@ -11,7 +11,8 @@
               <p class="text-600 mt-2">{{ slotProps.data.text }}</p>
             </div>
 
-            <Button label="Подробнее" class="bg-primary" @click="$router.push(`/document/${slotProps.data.id}`)"></Button>
+            <Button label="Подробнее" class="bg-primary"
+              @click="$router.push(`/document/${slotProps.data.id}`)"></Button>
           </div>
         </template>
       </Carousel>
@@ -31,7 +32,24 @@ const products = ref([
   { id: 3, title: 'Информация об оплате', text: 'Десятипозиционный переключатель дозировки расположен на ручке тележки и позволяет очень точно регулировать объем рассыпаемого реагента с учетом его массы и фракции.' }
 ]);
 
+const responsiveOptions = ref([
+  {
+    breakpoint: '1024px',
+    numVisible: 3,
+    numScroll: 3
+  },
 
+  {
+    breakpoint: '600px',
+    numVisible: 2,
+    numScroll: 2
+  },
+
+  {
+    breakpoint: '480px',
+    numVisible: 1,
+    numScroll: 1
+  }]);
 
 
 </script>
